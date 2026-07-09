@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillMatch | Encontre sua vaga Front-End</title>
+
+    <meta name="description" content="Sistema para análise de compatibilidade entre candidatos e vagas Front-End.">
+
+    <link rel="stylesheet" href="assets/styles/index.style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ==========================
+            HEADER
+    =========================== -->
+
+    <header class="cabecalho">
+
+        <img src="assets/img/iconBranco.svg" alt="Logo SkillMatch" class="logo">
+
+        <h1>
+            Encontre as vagas de Front-End mais compatíveis com seu perfil.
+        </h1>
+
+    </header>
+
+    <!-- ==========================
+            MAIN
+    =========================== -->
+
+    <main>
+
+        <!-- ==========================
+                FORMULÁRIO
+        =========================== -->
+
+        <section class="perfil">
+
+            <form id="formPerfil">
+
+                <h2>Preencha suas informações</h2>
+
+                <div class="campos">
+
+                    <div class="campo">
+
+                        <label for="nome">
+                            Nome
+                        </label>
+
+                        <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <div class="dropdown" id="dropdownArea">
+
+                            <label>Área</label>
+
+                            <button type="button" class="dropdown-botao" id="botaoArea">
+
+                                Selecione uma área
+
+                            </button>
+
+                            <div class="dropdown-menu" id="listaAreas">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <div class="dropdown" id="dropdownHabilidades">
+
+                            <label>Habilidades</label>
+
+                            <button type="button" class="dropdown-botao" id="botaoHabilidades">
+
+                                Selecione habilidades
+
+                            </button>
+
+                            <div class="dropdown-menu" id="listaHabilidades">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="experiencia">
+                            Experiência (meses)
+                        </label>
+
+                        <input type="number" id="experiencia" name="experiencia" min="0" placeholder="Número de meses">
+
+                    </div>
+
+                </div>
+
+                <button type="submit" id="btnPesquisar">
+
+                    Pesquisar vagas
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- ==========================
+                ÁREA INICIAL
+        =========================== -->
+
+        <section id="areaInicial" class="area-inicial">
+
+            <img src="assets/img/iconFundo.svg" alt="Ilustração de programador">
+
+        </section>
+
+        <!-- ==========================
+                MENSAGENS
+        =========================== -->
+
+        <section id="mensagemSistema" class="mensagem-sistema" aria-live="polite">
+
+            <!--
+                Carregando...
+                Nenhuma vaga encontrada
+                Erro ao carregar
+            -->
+
+        </section>
+
+        <!-- ==========================
+                RESULTADOS
+        =========================== -->
+
+        <section id="resultadoVagas" class="resultado-vagas">
+
+            <h2>
+                Vagas
+            </h2>
+
+            <div id="listaVagas" class="lista-vagas">
+
+                <!-- cards criados via JavaScript -->
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+            RECOMENDAÇÃO
+        =========================== -->
+
+        <section id="recomendacao" class="recomendacao">
+
+            <h2>
+                Recomendação de estudos
+            </h2>
+
+            <p id="textoRecomendacao"></p>
+
+        </section>
+
+    </main>
+
+    <!-- ==========================
+            FOOTER
+    =========================== -->
+
+    <footer>
+
+        <div>
+
+            <p>
+                Projeto Skill Match - SCTEC
+            </p>
+
+            <p>
+                Thaize de Paula Bertelli
+            </p>
+
+            <p>
+                07/2026
+            </p>
+
+        </div>
+
+        <img src="assets/img/logoSenai.svg" alt="Logo SENAI e SESI">
+
+    </footer>
+
+    <script type="module" src="assets/scripts/main.js">
+    </script>
+
+</body>
+
+</html>
