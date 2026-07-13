@@ -253,7 +253,7 @@ export function renderizarVagas(resultados, melhorVaga) {
 
       destaque.className = "melhor-vaga";
 
-      destaque.textContent = "Melhor compatibilidade";
+      destaque.textContent = "★ Melhor compatibilidade";
 
       card.appendChild(destaque);
     }
@@ -276,7 +276,7 @@ export function renderizarVagas(resultados, melhorVaga) {
 
                     <h4>Habilidades encontradas</h4>
 
-                    <p>${resultado.habilidadesPossuidas.join("<br>") || "-"}</p>
+                    <p>${resultado.habilidadesPossuidas.join(" • ") || "-"}</p>
 
                 </div>
 
@@ -284,7 +284,7 @@ export function renderizarVagas(resultados, melhorVaga) {
 
                     <h4>Habilidades faltantes</h4>
 
-                    <p>${resultado.habilidadesFaltantes.join("<br>") || "-"}</p>
+                    <p>${resultado.habilidadesFaltantes.join(" • ") || "-"}</p>
 
                 </div>
 
