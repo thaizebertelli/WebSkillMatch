@@ -127,3 +127,17 @@ export function criarVagas(dados) {
       ),
   );
 }
+
+// ===============================
+// ORDENAR VAGAS
+// ===============================
+
+export function ordenarResultados(resultados) {
+
+    return resultados.sort((a, b) => {
+
+        return Number(b.compatibilidade) - Number(a.compatibilidade);
+
+    });
+
+}
