@@ -108,7 +108,7 @@ webskillmatch/
 
 A aplicação pode ser acessada em:
 
-(Criar deploy)
+https://thaizebertelli.github.io/WebSkillMatch/
 
 ---
 
