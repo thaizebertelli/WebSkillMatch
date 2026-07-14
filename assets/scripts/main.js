@@ -1,10 +1,6 @@
 import { carregarVagas, salvarPerfil, recuperarPerfil } from "./dados.js";
 
-import {
-    criarVagas,
-    ordenarResultados,
-    encontrarMelhorVaga
-} from "./motor.js";
+import { criarVagas, ordenarResultados, encontrarMelhorVaga } from "./motor.js";
 
 import {
   criarAreas,
@@ -80,7 +76,7 @@ iniciarSistema();
 // ANALISAR
 // ===============================
 
-function analisar(vagas) {
+async function analisar(vagas) {
   const candidato = obterDadosFormulario();
 
   if (!validarFormulario(candidato)) {
@@ -90,10 +86,20 @@ function analisar(vagas) {
   salvarPerfil(candidato);
 
   mostrarCarregando();
+  await new Promise((resolve) => setTimeout(resolve, 1500));
 
-  let resultados = vagas.map(vaga =>
-    vaga.analisarCompatibilidade(candidato)
-);
+  const vagasFiltradas = vagas.filter((vaga) =>
+    candidato.area.includes(vaga.area),
+  );
+
+  if (vagasFiltradas.length === 0) {
+    mostrarSemVagas();
+    return;
+  }
+
+  let resultados = vagasFiltradas.map((vaga) =>
+    vaga.analisarCompatibilidade(candidato),
+  );
 
   resultados = ordenarResultados(resultados);
 
