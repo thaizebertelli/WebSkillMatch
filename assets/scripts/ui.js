@@ -266,7 +266,9 @@ export function renderizarVagas(resultados, melhorVaga) {
 
                 ${resultado.vaga.empresa} •
                 ${resultado.vaga.estado} •
-                ${resultado.vaga.modalidade}
+                ${resultado.vaga.modalidade}•
+                ${resultado.vaga.salario}
+                
 
             </p>
 
@@ -274,7 +276,7 @@ export function renderizarVagas(resultados, melhorVaga) {
 
                 <div class="card-coluna">
 
-                    <h4>Habilidades encontradas</h4>
+                    <h4>Habilidades possuidas</h4>
 
                     <p>${resultado.habilidadesPossuidas.join(" • ") || "-"}</p>
 
