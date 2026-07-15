@@ -266,8 +266,8 @@ export function renderizarVagas(resultados, melhorVaga) {
 
                 ${resultado.vaga.empresa} •
                 ${resultado.vaga.estado} •
-                ${resultado.vaga.modalidade}•
-                ${resultado.vaga.salario}
+                ${resultado.vaga.modalidade} •
+                R$ ${resultado.vaga.salario}
                 
 
             </p>
