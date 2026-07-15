@@ -276,7 +276,7 @@ export function renderizarVagas(resultados, melhorVaga) {
 
                 <div class="card-coluna">
 
-                    <h4>Habilidades possuidas</h4>
+                    <h4>Habilidades possuídas</h4>
 
                     <p>${resultado.habilidadesPossuidas.join(" • ") || "-"}</p>
 
