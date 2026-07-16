@@ -247,6 +247,14 @@ https://trello.com/b/fjFc83iK/skillmatch-projeto-final
 
 ---
 
+##Vídeo de apresentação
+
+O vídeo de demonstração do projeto pode ser acessado pelo link abaixo:
+
+[Assistir vídeo](https://youtu.be/cyZN9dTr8r0)
+
+---
+
 ## Desenvolvido por
 
 **Thaize de Paula Bertelli**
